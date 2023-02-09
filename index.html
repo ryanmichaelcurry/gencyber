@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GenCyber @ MSSTATE</title>
+
+    <style>
+        
+        @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            list-style: none;
+            text-decoration: none;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            background-color: #051720;
+            color: #fafbfd;
+        }
+
+        @media screen and (max-width: 768px) {
+            body #linhas-superiores img {
+                width: 100vw;
+                height: auto;
+            }
+            body #linhas-inferiores img {
+                width: 100vw;
+                height: auto;
+            }
+        }
+
+        @media screen and (min-width: 769px) {
+            body #linhas-superiores img {
+                width: 50vw;
+                height: auto;
+            }
+            body #linhas-inferiores img {
+                width: 50vw;
+                height: auto;
+            }
+        }
+
+        body #linhas-superiores img {
+            position: fixed;
+            top: 0;
+            left: 0;
+            opacity: 0.1;
+            z-index: -1;
+        }
+
+        body #linhas-inferiores img {
+            transform: scale(-1);
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            opacity: 0.1;
+            z-index: -1;
+        }
+
+        body #wrapper {
+            min-height: 100vh;
+            max-width: 720px;
+            margin: auto;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        body #wrapper .header {
+            padding: 1.5rem 0;
+        }
+
+        body #wrapper .header .modelev-logo {
+            width: 256px;
+            height: 256px;
+            margin-bottom: 10px;
+            border-radius: 50%;
+        }
+
+        body #wrapper li a {
+            display: block;
+            color: #fafbfd;
+            background-color: #33a1da;
+            padding: 18px 57px;
+            transition: 0.3s;
+        }
+
+        body #wrapper li a:hover {
+            background-color: #49cdc9;
+            transition: 0.3s;
+        }
+
+        body #wrapper li {
+            margin: .9rem;
+        }
+
+        body #wrapper .spacer {
+            display: block;
+            padding: 1.5rem 0;
+        }
+
+        body #wrapper .footer {
+            margin-bottom: 1rem;
+        }
+
+        body #wrapper .footer .footer-img {
+            width: 128px;
+            height: auto;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div id="linhas-superiores">
+        <img src="assets/linhas.png">
+    </div>
+
+    <div id="linhas-inferiores">
+        <img src="assets/linhas.png">
+    </div>
+
+    <div id="wrapper">
+        <div class="header">
+            <img class="modelev-logo" src="assets/avatar.png"><br>
+            GenCyber @ Mississippi State University
+        </div>
+
+        <li><a href="https://www.msstate.edu/events">Register</a></li>
+
+        <li><a href="https://youtu.be/xQVL0Cd11kk">Informational Video</a></li>
+
+    </div>
+</body>
+</html>
